@@ -22,7 +22,7 @@ class CandidaturesController extends \Core\Controller
 
      public function accept() {
         $admin = new Candidatures;
-        $discord = new DiscordClient(['token' => 'Nzk3NDI4NjYyNjUwOTI5MjAz.X_mVUA.S5qCia1kxl_iTHjhbAE_n2OYqts']);
+        $discord = new DiscordClient(['token' => '']);
         $adminuser = $discord->user->getUser(['user.id' => intval($_SESSION['adminid'])]);
         $candid = $discord->user->getUser(['user.id' => intval($_POST['user_id'])]);
         $admin->deleteCandidature($_POST["user_id"]); // Delete
@@ -56,7 +56,7 @@ class CandidaturesController extends \Core\Controller
 
      public function refuse() {
         $model = new Candidatures;
-        $discord = new DiscordClient(['token' => 'Nzk3NDI4NjYyNjUwOTI5MjAz.X_mVUA.S5qCia1kxl_iTHjhbAE_n2OYqts']);
+        $discord = new DiscordClient(['token' => '']);
         $adminuser = $discord->user->getUser(['user.id' => intval($_SESSION['adminid'])]);
         $candid = $discord->user->getUser(['user.id' => intval($_POST['user_id'])]);
         $model->deleteCandidature($_POST["user_id"]);
