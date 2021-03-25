@@ -1,0 +1,29 @@
+textarea {
+    height: 100px !important;
+    width: 1000px !important;
+    outline: none !important;
+    resize: none !important;
+    font-family: "IBM Plex Sans", sans-serif !important;
+    color: white !important;
+    transition: 1s;
+    border: 1px solid #15181d;
+    background-color: #15181d;
+    color: white;
+}
+
+textarea:focus {
+    outline: none;
+    transition: 1s;
+    border-bottom-color: #097dea !important;
+    color: white i !important;
+
+}
+
+::placeholder {
+    color: white;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.button_valid {
+    text-align: right !important;
+}
